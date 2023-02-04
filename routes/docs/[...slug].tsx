@@ -2,7 +2,6 @@ import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { frontMatter, gfm } from "../../utils/markdown.ts";
 
-import DocsTitle from "../../components/DocsTitle.tsx";
 import DocsSidebar from "../../components/DocsSidebar.tsx";
 import {
   SLUGS,
@@ -120,7 +119,6 @@ function MobileSidebar(props: { path: string }) {
         />
         <div class="relative flex-1 flex flex-col w-[16rem] h-full bg-white border(r-2 gray-100)">
           <div class="p-4 border(b-2 gray-100) bg-green-300">
-            <DocsTitle title="docs" />
           </div>
           <nav class="pt-6 pb-16 px-4 overflow-x-auto">
             <DocsSidebar mobile path={props.path} />
