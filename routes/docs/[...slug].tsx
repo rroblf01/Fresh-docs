@@ -51,7 +51,6 @@ export default function DocsPage(props: PageProps<Data>) {
   let description;
 
   if (props.data.page.data.description) {
-    console.log(props.data);
     description = String(props.data.page.data.description);
   }
 
